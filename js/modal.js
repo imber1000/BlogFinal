@@ -26,6 +26,7 @@ document.getElementById("login-btn")?.addEventListener("click", () => {
     loginModal.show();
 });
 
+
 // Mostrar modal de registro
 //document.getElementById("register-btn")?.addEventListener("click", () => {
 //    registerModal.show();
