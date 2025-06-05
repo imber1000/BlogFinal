@@ -27,9 +27,9 @@ document.getElementById("login-btn")?.addEventListener("click", () => {
 });
 
 // Mostrar modal de registro
-document.getElementById("register-btn")?.addEventListener("click", () => {
-    registerModal.show();
-});
+//document.getElementById("register-btn")?.addEventListener("click", () => {
+//    registerModal.show();
+//});
 
 // Mostrar modal para nuevo post
 document.getElementById("nuevo-post-btn")?.addEventListener("click", () => {
