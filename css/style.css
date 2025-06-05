@@ -1,0 +1,225 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barra de navegación */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Tarjetas de publicaciones */
+.post-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-card .card-body {
+    padding: 1.5rem;
+}
+
+.post-card .card-title {
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+}
+
+.post-card .card-text {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.post-card .badge {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+/* Categorías */
+.badge-tendencias { background-color: #6f42c1; }
+.badge-nuevas-tecnologias { background-color: #20c997; }
+.badge-noticias-delitos { background-color: #dc3545; }
+.badge-tips { background-color: #fd7e14; }
+.badge-software { background-color: #0dcaf0; }
+.badge-hardware { background-color: #6c757d; }
+
+/* Modal de publicación */
+.modal-content {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Estilos para el contenido del post */
+#viewPostContent img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .post-card .card-img-top {
+        height: 150px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Estilos para el mensaje de no hay publicaciones */
+.no-posts {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.no-posts i {
+    font-size: 3rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.no-posts h3 {
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.no-posts p {
+    color: #6c757d;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+
+.post-image-container {
+    height: 200px;
+    overflow: hidden;
+}
+
+.post-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover .post-image-container img {
+    transform: scale(1.03);
+}
+
+.post-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.no-posts {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .post-image-container {
+        height: 150px;
+    }
+}
+
+
+#viewPostContent strong {
+    font-weight: bold;
+    color: #333; /* Puedes ajustar el color */
+}
+
+
+/* Estilos para formato de texto */
+.card-text strong, #viewPostContent strong {
+    font-weight: 600;
+    color: #292121; /* Color oscuro para mejor legibilidad */
+}
+
+.card-text em, #viewPostContent em {
+    font-style: italic;
+}
+
+.card-text br, #viewPostContent br {
+    display: block;
+    content: "";
+    margin-bottom: 0.5em;
+}
+
+/* Asegura que el HTML renderizado se vea bien */
+.card-text, #viewPostContent {
+    overflow-wrap: break-word;
+}
+
+#viewPostContent br, .card-text br {
+    display: block;
+    content: "";
+    margin-bottom: 0.8em;
+}
+
+
+/*nuevo*/
+
+/* En tu archivo style.css */
+.card-text-container {
+    position: relative;
+}
+
+.card-text-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+}
+
+.card-text-content strong {
+    font-weight: 600;
+    color: #292121;
+}
+
+.card-text-content br {
+    display: none; /* Ocultar saltos en vista previa */
+}
+
+
+
