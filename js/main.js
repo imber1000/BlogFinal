@@ -150,7 +150,7 @@ function createPostElement(post) {
                         </span>
                         <small class="text-muted">${post.formattedDate}</small>
                     </div>
-                    <h5 class="card-title" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${post.title}</h5>
+                    <h5 class="card-title" style="display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;">${post.title}</h5>
                     <div class="card-text-container" style="max-height: 120px; overflow: hidden;">
     <div class="card-text-content" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
         ${markdownToHtml(post.content)}
